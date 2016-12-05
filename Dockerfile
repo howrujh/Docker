@@ -15,6 +15,7 @@ RUN mkdir ~/github
 RUN git clone http://github.com/howrujh/MyConf ~/github/myconf
 RUN git clone http://github.com/howrujh/MyScript ~/github/myscript
 
+RUN ln -s ~/github/myscript ~/scripts
 RUN ln -s ~/github/myconf/.tmux.conf ~/.tmux.conf
 RUN ln -s ~/github/myconf/.emacs ~/.emacs
 RUN touch ~/.emacs_disable.el
